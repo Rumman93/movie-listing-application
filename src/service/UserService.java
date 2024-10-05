@@ -1,5 +1,6 @@
 package service;
 
+import domain.model.Movie;
 import domain.model.User;
 
 import java.util.ArrayList;

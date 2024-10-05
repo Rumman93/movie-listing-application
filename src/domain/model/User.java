@@ -9,11 +9,11 @@ import java.util.List;
 public class User {
 
     private String email;
-    private List<Movie> favorites;
+    private List<Movie> favoriteList;
 
-    public User(String email, List<Movie> favorites) {
+    public User(String email, List<Movie> favoriteList) {
         this.email = email;
-        this.favorites = favorites;
+        this.favoriteList = favoriteList;
     }
 
     public User() {
@@ -27,11 +27,19 @@ public class User {
         this.email = email;
     }
 
-    public List<Movie> getFavorites() {
-        return favorites;
+    public List<Movie> getFavoriteList() {
+        return favoriteList;
     }
 
-    public void setFavorites(List<Movie> favorites) {
-        this.favorites = favorites;
+    public void setFavoriteList(List<Movie> favoriteList) {
+        this.favoriteList = favoriteList;
+    }
+
+    public void addToFavoriteList(Movie movie) {
+        favoriteList.add(movie);
+    }
+
+    public void removeFromFavoriteList(Movie movie) {
+        favoriteList.remove(movie);
     }
 }

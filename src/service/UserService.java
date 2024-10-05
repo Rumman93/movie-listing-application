@@ -30,4 +30,9 @@ public class UserService {
                 .findFirst()
                 .orElse(null);
     }
+
+    public boolean isValidEmailFormat(String email) {
+        String emailRegex = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$";
+        return email != null && email.matches(emailRegex);
+    }
 }

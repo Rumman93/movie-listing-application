@@ -25,7 +25,9 @@ public class UserRegistrationTest {
 
     private static void testUserEmailFormat() {
 
-        String message = isValidEmailFormat(TEST_EMAIL)
+        boolean isValid = userService.isValidEmailFormat(TEST_EMAIL);
+
+        String message = Boolean.TRUE.equals(isValid)
                 ? "testEmailFormat PASSED: Email format is valid"
                 : "testEmailFormat FAILED: Email format is invalid for " + TEST_EMAIL;
 

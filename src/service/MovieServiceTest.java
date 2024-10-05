@@ -41,7 +41,7 @@ public class MovieServiceTest {
         movie.setTitle(TEST_TITLE);
         movie.setCast(TEST_CAST);
         movie.setCategory(TEST_CATEGORY);
-        movie.setReleaseDate("05-04-2024");
+        movie.setReleaseDate("2024");
         movie.setBudget(BigDecimal.valueOf(500000000));
 
         movieService.addNewMovie(movie);

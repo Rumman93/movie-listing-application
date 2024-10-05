@@ -1,6 +1,9 @@
 package domain.model;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Author :  Ahmmed Jubayer Rumman
@@ -9,9 +12,9 @@ import java.util.List;
 public class User {
 
     private String email;
-    private List<Movie> favoriteList;
+    private Set<Movie> favoriteList = new HashSet<>();
 
-    public User(String email, List<Movie> favoriteList) {
+    public User(String email, Set<Movie> favoriteList) {
         this.email = email;
         this.favoriteList = favoriteList;
     }
@@ -27,11 +30,11 @@ public class User {
         this.email = email;
     }
 
-    public List<Movie> getFavoriteList() {
+    public Set<Movie> getFavoriteList() {
         return favoriteList;
     }
 
-    public void setFavoriteList(List<Movie> favoriteList) {
+    public void setFavoriteList(Set<Movie> favoriteList) {
         this.favoriteList = favoriteList;
     }
 

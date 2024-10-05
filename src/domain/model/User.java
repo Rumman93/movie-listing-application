@@ -8,12 +8,15 @@ import java.util.List;
  */
 public class User {
 
-    String email;
-    List<Movie> favorites;
+    private String email;
+    private List<Movie> favorites;
 
     public User(String email, List<Movie> favorites) {
         this.email = email;
         this.favorites = favorites;
+    }
+
+    public User() {
     }
 
     public String getEmail() {

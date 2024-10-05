@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="593bc5cd-2e01-4022-beb6-6f9abf248650" name="Changes" comment="project initialized">
-      <change afterPath="$PROJECT_DIR$/src/domain/model/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/model/User.java" afterDir="false" />
+    <list default="true" id="593bc5cd-2e01-4022-beb6-6f9abf248650" name="Changes" comment="added pojo class">
+      <change afterPath="$PROJECT_DIR$/src/service/MovieService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728126496479</updated>
-      <workItem from="1728126497851" duration="1409000" />
+      <workItem from="1728126497851" duration="2830000" />
     </task>
     <task id="LOCAL-00001" summary="project initialized">
       <created>1728126615595</created>
@@ -60,7 +62,14 @@
       <option name="project" value="LOCAL" />
       <updated>1728126615595</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added pojo class">
+      <created>1728127958371</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728127958371</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,6 +88,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="project initialized" />
-    <option name="LAST_COMMIT_MESSAGE" value="project initialized" />
+    <MESSAGE value="added pojo class" />
+    <option name="LAST_COMMIT_MESSAGE" value="added pojo class" />
   </component>
 </project>

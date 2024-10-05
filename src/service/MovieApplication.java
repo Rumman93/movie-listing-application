@@ -69,6 +69,8 @@ public class MovieApplication {
 
     private void registerUserWithEmail(Scanner scanner) {
 
+        System.out.println("Welcome to Movie Listing Application");
+
         String email;
 
         while (true) {
@@ -91,9 +93,13 @@ public class MovieApplication {
 
     private void showMenu() {
 
+        System.out.println("**********************");
+
         for (ShowOptionEnum option : ShowOptionEnum.values()) {
             System.out.println(option.getText());
         }
+
+        System.out.println("**********************");
 
         System.out.print("Choose an option: ");
 
@@ -217,15 +223,41 @@ public class MovieApplication {
 
     private void viewPersonalDetails() {
 
-        System.out.println("User: " + currentUser.getEmail());
+        System.out.println("Email: " + currentUser.getEmail());
 
     }
 
     private void initializeMovies() {
-        movieService.addNewMovie(new Movie(BigDecimal.valueOf(160000000), "Leonardo DiCaprio", "Action", "2010", "Inception"));
-        movieService.addNewMovie(new Movie(BigDecimal.valueOf(190000000), "Adam Sandler", "Sci Fi", "2024", "Spaceman"));
-        movieService.addNewMovie(new Movie(BigDecimal.valueOf(180000000), "Vijay Deverakonda", "Action", "2024", "The Family Star"));
+
+        Movie movie1 = new Movie();
+        movie1.setBudget(BigDecimal.valueOf(160000000));
+        movie1.setCast("Leonardo DiCaprio");
+        movie1.setCategory("Action");
+        movie1.setReleaseDate("2010");
+        movie1.setTitle("Inception");
+
+        movieService.addNewMovie(movie1);
+
+        Movie movie2 = new Movie();
+        movie2.setBudget(BigDecimal.valueOf(190000000));
+        movie2.setCast("Adam Sandler");
+        movie2.setCategory("Sci Fi");
+        movie2.setReleaseDate("2024");
+        movie2.setTitle("Spaceman");
+
+        movieService.addNewMovie(movie2);
+
+        Movie movie3 = new Movie();
+        movie3.setBudget(BigDecimal.valueOf(180000000));
+        movie3.setCast("Vijay Deverakonda");
+        movie3.setCategory("Action");
+        movie3.setReleaseDate("2024");
+        movie3.setTitle("The Family Star");
+
+        movieService.addNewMovie(movie3);
+
     }
+
 
 }
 

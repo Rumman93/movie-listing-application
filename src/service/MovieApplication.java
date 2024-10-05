@@ -5,6 +5,7 @@ package service;
  * Created at : 05 Oct 2024
  */
 
+import domain.enums.ShowOptionEnum;
 import domain.model.Movie;
 import domain.model.User;
 
@@ -90,17 +91,14 @@ public class MovieApplication {
 
     private void showMenu() {
 
-        System.out.println("1. Search Movies");
-        System.out.println("2. View Movie Details");
-        System.out.println("3. Add Movie to Favorites");
-        System.out.println("4. Remove Movie from Favorites");
-        System.out.println("5. View Favorites");
-        System.out.println("6. Search Favorites");
-        System.out.println("7. View Personal Details");
-        System.out.println("8. Exit");
+        for (ShowOptionEnum option : ShowOptionEnum.values()) {
+            System.out.println(option.getText());
+        }
+
         System.out.print("Choose an option: ");
 
     }
+
 
     private void searchMovies(Scanner scanner) {
 

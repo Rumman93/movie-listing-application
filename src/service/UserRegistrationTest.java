@@ -4,7 +4,7 @@ import domain.model.User;
 
 import java.util.Objects;
 
-public class UserServiceTest {
+public class UserRegistrationTest {
 
     private static UserService userService;
     private static final String TEST_EMAIL = "ahmmedjubayer2015@gmail.com";

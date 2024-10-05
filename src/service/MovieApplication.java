@@ -30,7 +30,13 @@ public class MovieApplication {
 
             showMenu();
 
-            int option = Integer.parseInt(scanner.nextLine());
+            int option;
+
+            try {
+                option = Integer.parseInt(scanner.nextLine());
+            } catch (Exception ex) {
+                option = 9;
+            }
 
             switch (option) {
 
@@ -50,7 +56,7 @@ public class MovieApplication {
 
                 case 8 -> running = false;
 
-                default -> System.out.println("Invalid option.");
+                default -> System.out.println("Please Choose Valid Option !!");
 
             }
         }
